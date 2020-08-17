@@ -1,0 +1,11 @@
+
+<app-home-header *ngIf="showHomeHeader" ></app-home-header>
+<app-admin-header *ngIf="showAdminHeader"></app-admin-header>
+<div class="app-main">
+    <app-home-sidebar *ngIf="showHomeSidebar" ></app-home-sidebar>
+    <app-admin-sidebar *ngIf="showAdminSidebar"></app-admin-sidebar>
+    <router-outlet></router-outlet>
+    <app-home-footer *ngIf="showHomeFooter" ></app-home-footer>
+    <app-admin-footer *ngIf="showAdminFooter" ></app-admin-footer>
+</div>
+

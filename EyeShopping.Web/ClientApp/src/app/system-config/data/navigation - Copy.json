@@ -1,0 +1,60 @@
+[
+  {
+    "sidebarHeading": "MENU",
+    "features":[
+      {
+        "isparent": true,
+        "title": "DASHBOARD",
+        "tag_id": "nav-dashboard",
+        "functions": [
+          {
+            "tag_id": "",
+            "title": "Analytics",
+            "url": "url-Analytics",
+            "isactive": true,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "title": "Commerce",
+            "url": "url-Commerce",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "title": "Sales",
+            "url": "url-Sales",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "nav-minimal",
+            "title": "Minimal",
+            "url": "url-Minimal",
+            "isactive":false,
+            "isparent":true,
+            "activities": [
+              {
+                "title": "Variation 1",
+                "url": "url-Variation1",
+                "isactive":false
+              },
+              {
+                "title": "Variation 2",
+                "url": "url-Variation2",
+                "isactive":false
+              }
+            ]
+          },
+          {
+            "title": "CRM",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          }
+        ]
+      }
+    ]
+  }
+]

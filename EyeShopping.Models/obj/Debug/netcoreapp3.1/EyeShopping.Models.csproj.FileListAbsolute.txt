@@ -1,0 +1,9 @@
+F:\Projects\Orgnizations\__Home\WebApi+Vue\OnlineStore\EyeShopping\EyeShopping.Models\bin\Debug\netcoreapp3.1\EyeShopping.Models.deps.json
+F:\Projects\Orgnizations\__Home\WebApi+Vue\OnlineStore\EyeShopping\EyeShopping.Models\bin\Debug\netcoreapp3.1\EyeShopping.Models.dll
+F:\Projects\Orgnizations\__Home\WebApi+Vue\OnlineStore\EyeShopping\EyeShopping.Models\bin\Debug\netcoreapp3.1\EyeShopping.Models.pdb
+F:\Projects\Orgnizations\__Home\WebApi+Vue\OnlineStore\EyeShopping\EyeShopping.Models\obj\Debug\netcoreapp3.1\EyeShopping.Models.AssemblyInfoInputs.cache
+F:\Projects\Orgnizations\__Home\WebApi+Vue\OnlineStore\EyeShopping\EyeShopping.Models\obj\Debug\netcoreapp3.1\EyeShopping.Models.AssemblyInfo.cs
+F:\Projects\Orgnizations\__Home\WebApi+Vue\OnlineStore\EyeShopping\EyeShopping.Models\obj\Debug\netcoreapp3.1\EyeShopping.Models.csproj.CoreCompileInputs.cache
+F:\Projects\Orgnizations\__Home\WebApi+Vue\OnlineStore\EyeShopping\EyeShopping.Models\obj\Debug\netcoreapp3.1\EyeShopping.Models.dll
+F:\Projects\Orgnizations\__Home\WebApi+Vue\OnlineStore\EyeShopping\EyeShopping.Models\obj\Debug\netcoreapp3.1\EyeShopping.Models.pdb
+F:\Projects\Orgnizations\__Home\WebApi+Vue\OnlineStore\EyeShopping\EyeShopping.Models\obj\Debug\netcoreapp3.1\EyeShopping.Models.csprojAssemblyReference.cache

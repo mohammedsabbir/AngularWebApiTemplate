@@ -1,0 +1,411 @@
+[
+  {
+    "sidebarHeading": "MENU",
+    "features":[
+      {
+        "isparent": true,
+        "iconclass": "pe-7s-rocket",
+        "title": "DASHBOARD",
+        "tag_id": "nav-dashboard",
+        "functions": [
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Analytics",
+            "url": "url-Analytics",
+            "isactive": true,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Commerce",
+            "url": "url-Commerce",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Sales",
+            "url": "url-Sales",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "nav-minimal",
+            "iconclass": "",
+            "title": "Minimal",
+            "url": "url-Minimal",
+            "isactive":false,
+            "isparent":true,
+            "activities": [
+              {
+                "title": "Variation 1",
+                "url": "url-Variation1",
+                "isactive":false
+              },
+              {
+                "title": "Variation 2",
+                "url": "url-Variation2",
+                "isactive":false
+              }
+            ]
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "CRM",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          }
+        ]
+      },
+      {
+        "isparent": true,
+        "iconclass": "pe-7s-browser",
+        "title": "PAGES",
+        "tag_id": "nav-pages",
+        "functions": [
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Login",
+            "url": "url-Analytics",
+            "isactive": false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Login Boxed",
+            "url": "url-Commerce",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Register",
+            "url": "url-Sales",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Register Boxed",
+            "url": "url-Minimal",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "title": "Forget Password",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "title": "Forget Password Boxed",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          }
+        ]
+      },
+      {
+        "isparent": true,
+        "iconclass": "pe-7s-plugin",
+        "title": "APPLICATIONS",
+        "tag_id": "nav-applicaitions",
+        "functions": [
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Mailbox",
+            "url": "url-Analytics",
+            "isactive": false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Chat",
+            "url": "url-Commerce",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "FAQ Section",
+            "url": "url-Sales",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Forums",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sidebarHeading": "UI COMPONENTS",
+    "features":[
+      {
+        "isparent": true,
+        "iconclass": "pe-7s-diamond",
+        "title": "Elements",
+        "tag_id": "nav-elements",
+        "functions": [
+          {
+            "tag_id": "nav-buttons",
+            "iconclass": "",
+            "title": "Buttons",
+            "url": "url-Analytics",
+            "isactive": false,
+            "isparent":true,
+            "activities":[
+              {
+                "title": "Standard",
+                "url": "standard",
+                "isactive": false
+              },
+              {
+                "title": "Pills",
+                "url": "standard",
+                "isactive": false
+              },
+              {
+                "title": "Square",
+                "url": "standard",
+                "isactive": false
+              },
+              {
+                "title": "Shadow",
+                "url": "standard",
+                "isactive": false
+              },
+              {
+                "title": "With Icons",
+                "url": "standard",
+                "isactive": false
+              }
+            ]
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Dropdowns",
+            "url": "url-Commerce",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Icons",
+            "url": "url-Sales",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Badges",
+            "url": "url-Minimal",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "title": "Cards",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "title": "Loading Indicators",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "title": "List Groups",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "title": "Navigation Menus",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "title": "Timeline",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "title": "Utilities",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          }
+        ]
+      },
+      {
+        "isparent": true,
+        "iconclass": "pe-7s-car",
+        "title": "Components",
+        "tag_id": "nav-components",
+        "functions": [
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Tabs",
+            "url": "url-Analytics",
+            "isactive": false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Accourdions",
+            "url": "url-Commerce",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Notifications",
+            "url": "url-Sales",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Modals",
+            "url": "url-Minimal",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Loading Blockers",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Progress Bar",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Tooltips & Popovers",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Carousel",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Calendar",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Pagination",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Count Up",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Scrollble",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Tree View",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Maps",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Ratings",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Image Crop",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          },
+          {
+            "tag_id": "",
+            "iconclass": "",
+            "title": "Guided Tours",
+            "url": "",
+            "isactive":false,
+            "isparent":false
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1009 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #3f6ad8;
+  --secondary: #6c757d;
+  --success: #3ac47d;
+  --info: #16aaff;
+  --warning: #f7b924;
+  --danger: #d92550;
+  --light: #eee;
+  --dark: #343a40;
+  --focus: #444054;
+  --alternate: #794c8a;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .88rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: left;
+  background-color: #fff;
+}
+
+/* Main mody content */
+
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* End of main body content */
+/* header content */
+.app-theme-white .app-footer .app-footer__inner, .app-theme-white .app-header {  background: #fafbfc;}
+.fixed-header .app-header {  position: fixed;  width: 100%;  top: 0;}
+.app-theme-white.fixed-header .app-header__logo {  background: rgba(250,251,252,0.1);}
+.fixed-header .app-header .app-header__logo {  visibility: visible;}
+.app-header__logo {
+  padding: 0 1.5rem;
+  height: 60px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  transition: width .2s;
+}
+/* End of header content */
+/* app-header and it's child css */
+.icon-anim-pulse {
+  animation: pulse_animation;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes pulse_animation{0%{transform:scale(1)}30%{transform:scale(1.1)}40%{transform:scale(1.21)}50%{transform:scale(1)}60%{transform:scale(1)}70%{transform:scale(1.09)}80%{transform:scale(1.05)}100%{transform:scale(1)}}
+/* header-dots css */
+.header-dots .icon-wrapper-alt .badge-dot {  top: 1px;  right: 1px;  border: 0;}
+.header-dots .icon-wrapper-alt i {  font-size: 1.3rem;}
+.header-dots{margin-left:auto;display:flex}
+.header-dots>.dropdown{display:flex;align-content:center}
+.header-dots .icon-wrapper-alt{margin:0;height:44px;width:44px;text-align:center;overflow:visible}
+.header-dots .icon-wrapper-alt .language-icon{border-radius:30px;position:relative;z-index:4;width:32px;height:32px;overflow:hidden;margin:0 auto}
+.header-dots .icon-wrapper-alt .language-icon img{position:relative;top:50%;left:50%;margin:-22px 0 0 -20px}
+.header-dots .icon-wrapper-alt .icon-wrapper-bg{opacity:.1;transition:opacity .2s;border-radius:40px}
+.header-dots .icon-wrapper-alt svg{margin:0 auto}
+@-moz-document url-prefix(){.header-dots .icon-wrapper-alt svg{width:50%}}
+.header-dots .icon-wrapper-alt:hover{cursor:pointer}
+.header-dots .icon-wrapper-alt:hover .icon-wrapper-bg{opacity:.2}
+/* end of header-dot css */
+
+.icon-wrapper i{margin:0 auto;font-size:1.7rem;position:relative;z-index:5}
+.icon-wrapper i:before{margin-top:-3px}
+.ion-android-notifications:before{content:""}
+.app-header.header-text-light .app-header-left>.nav>li>.nav-link{color:rgba(255,255,255,0.7)}
+.app-header.header-text-light .app-header-left>.nav>li>.nav-link .nav-link-icon{color:rgba(255,255,255,0.8)}
+.app-header.header-text-light .app-header-left>.nav>li>.nav-link:hover{color:#fff}
+.app-header.header-text-light .app-header-right .icon-wrapper-alt .fa,.app-header.header-text-light .app-header-right .icon-wrapper-alt .icon{color:rgba(255,255,255,0.7) !important;transition:all .2s}
+.app-header.header-text-light .app-header-right .icon-wrapper-alt .icon-wrapper-bg{background:rgba(255,255,255,0.1) !important;transition:all .2s;opacity:1}
+.app-header.header-text-light .app-header-right .icon-wrapper-alt:hover .fa,.app-header.header-text-light .app-header-right .icon-wrapper-alt:hover .icon{color:rgba(255,255,255,0.9) !important}
+.app-header.header-text-light .app-header-right .icon-wrapper-alt:hover .icon-wrapper-bg{background:rgba(255,255,255,0.15) !important}
+.app-header.header-text-light .app-header-right .icon-wrapper-alt .badge-dot{border-color:transparent}
+.app-header.header-text-light .app-header-right>.header-btn-lg .widget-content-left .btn-group>.btn,.app-header.header-text-light .app-header-right>.header-btn-lg .widget-heading,.app-header.header-text-light .app-header-right>.header-btn-lg .widget-subheading{color:rgba(255,255,255,0.8)}
+.app-header.header-text-light .app-header-right>.header-btn-lg .header-user-info>.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(0,0,0,0.1),0 0.0625rem 0.125rem rgba(0,0,0,0.2)}
+.app-header.header-text-light .search-wrapper .input-holder .search-icon{background:rgba(0,0,0,0.1)}
+.app-header.header-text-light .search-wrapper .input-holder .search-input::placeholder,.app-header.header-text-light .search-wrapper .input-holder .search-input::-webkit-input-placeholder,.app-header.header-text-light .search-wrapper .input-holder .search-input:-ms-input-placeholder,.app-header.header-text-light .search-wrapper .input-holder .search-input:-moz-placeholder,.app-header.header-text-light .search-wrapper .input-holder .search-input::-moz-placeholder{color:rgba(255,255,255,0.5) !important}
+.app-header.header-text-light .search-wrapper.active .input-holder{background:rgba(255,255,255,0.1)}
+.app-header.header-text-light .search-wrapper.active .input-holder .search-input{color:rgba(255,255,255,0.8)}
+.app-header.header-text-light .search-wrapper.active .input-holder .search-icon{background:rgba(255,255,255,0.1)}
+.app-header.header-text-light .header-btn-lg::before{background:rgba(255,255,255,0.2)}
+.app-header.header-text-light .header-btn-lg .hamburger-inner,.app-header.header-text-light .header-btn-lg .hamburger.is-active .hamburger-inner,.app-header.header-text-light .header-btn-lg .hamburger-inner::before,.app-header.header-text-light .header-btn-lg .hamburger-inner::after,.app-header.header-text-light .header__pane .hamburger-inner,.app-header.header-text-light .header__pane .hamburger.is-active .hamburger-inner,.app-header.header-text-light .header__pane .hamburger-inner::before,.app-header.header-text-light .header__pane .hamburger-inner::after{background-color:rgba(255,255,255,0.8) !important}
+.app-header.header-text-light .search-wrapper .input-holder .search-icon span::after{border-color:rgba(255,255,255,0.8)}
+.app-header.header-text-light .search-wrapper .close::before,.app-header.header-text-light .search-wrapper .close::after,.app-header.header-text-light .search-wrapper .input-holder .search-icon span::before{background:rgba(255,255,255,0.8)}
+.app-header.header-text-light .app-header__mobile-menu .hamburger-inner,.app-header.header-text-light .app-header__mobile-menu .hamburger-inner::before,.app-header.header-text-light .app-header__mobile-menu .hamburger-inner::after{background:rgba(255,255,255,0.9)}
+.app-header{height:60px;display:flex;align-items:center;align-content:center;position:relative;z-index:10;transition:all .2s}
+.app-header .app-header__content{display:flex;align-items:center;align-content:center;flex:1;padding:0 1.5rem;height:60px}
+.app-header .app-header__content .app-header-left{display:flex;align-items:center}
+.app-header .app-header__content .app-header-right{align-items:center;display:flex;margin-left:auto}
+.app-header .header-user-info>.widget-heading,.app-header .header-user-info>.widget-subheading{white-space:nowrap}
+.app-header .header-user-info>.widget-subheading{font-size:.8rem}
+.app-header.header-text-light .app-header-left>.nav>li>.nav-link:hover {  color: #fff;}
+.app-header.header-text-light .app-header-left>.nav>li>.nav-link {  color: rgba(255,255,255,0.7);}
+.app-header {  position: fixed;  width: 100%;  top: 0;}
+.app-header{justify-content:space-between}
+
+
+.app-header__menu, .app-header__mobile-menu {  display: none;  padding: 0 1.5rem;  height: 60px;  align-items: center;}
+.app-header.header-text-light .app-header__menu>span .btn,.app-header.header-text-light .app-header__menu>.btn{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.1)}
+.app-header.header-text-light .header-mobile-open{background:#343a40}
+.app-header__logo .logo-src { height: 23px; width: 97px; background: url(assets/images/logo.png);}
+.app-header.header-text-dark .app-header-left>.nav>li>.nav-link{color:rgba(0,0,0,0.7)}
+.app-header.header-text-dark .app-header-left>.nav>li>.nav-link .nav-link-icon{color:rgba(0,0,0,0.8)}
+.app-header.header-text-dark .app-header-left>.nav>li>.nav-link:hover{color:#000}
+.app-header.header-text-dark .app-header-right .icon-wrapper-alt .fa,.app-header.header-text-dark .app-header-right .icon-wrapper-alt .icon{color:rgba(0,0,0,0.7) !important;transition:all .2s}
+.app-header.header-text-dark .app-header-right .icon-wrapper-alt .icon-wrapper-bg{background:rgba(0,0,0,0.1) !important;transition:all .2s;opacity:1}
+.app-header.header-text-dark .app-header-right .icon-wrapper-alt:hover .fa,.app-header.header-text-dark .app-header-right .icon-wrapper-alt:hover .icon{color:rgba(0,0,0,0.95) !important}
+.app-header.header-text-dark .app-header-right .icon-wrapper-alt:hover .icon-wrapper-bg{background:rgba(0,0,0,0.15) !important}
+.app-header.header-text-dark .app-header-right .icon-wrapper-alt .badge-dot{border-color:transparent}
+.app-header.header-text-dark .app-header-right>.header-btn-lg .widget-content-left .btn-group>.btn,.app-header.header-text-dark .app-header-right>.header-btn-lg .widget-heading,.app-header.header-text-dark .app-header-right>.header-btn-lg .widget-subheading{color:rgba(0,0,0,0.8)}
+.app-header.header-text-dark .app-header-right>.header-btn-lg .header-user-info>.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(0,0,0,0.1),0 0.0625rem 0.125rem rgba(0,0,0,0.2)}
+.app-header.header-text-dark .search-wrapper .input-holder .search-icon{background:rgba(0,0,0,0.1)}
+.app-header.header-text-dark .search-wrapper.active .input-holder{background:rgba(0,0,0,0.1)}
+.app-header.header-text-dark .search-wrapper.active .input-holder .search-input{color:rgba(0,0,0,0.8)}
+.app-header.header-text-dark .search-wrapper.active .input-holder .search-icon{background:rgba(0,0,0,0.1)}
+.app-header.header-text-dark .header-btn-lg::before{background:rgba(0,0,0,0.2)}
+.app-header.header-text-dark .header-btn-lg .hamburger-inner,.app-header.header-text-dark .header-btn-lg .hamburger.is-active .hamburger-inner,.app-header.header-text-dark .header-btn-lg .hamburger-inner::before,.app-header.header-text-dark .header-btn-lg .hamburger-inner::after,.app-header.header-text-dark .header__pane .hamburger-inner,.app-header.header-text-dark .header__pane .hamburger.is-active .hamburger-inner,.app-header.header-text-dark .header__pane .hamburger-inner::before,.app-header.header-text-dark .header__pane .hamburger-inner::after{background-color:rgba(0,0,0,0.8) !important}
+.app-header.header-text-dark .search-wrapper .input-holder .search-icon span::after{border-color:rgba(0,0,0,0.8)}
+.app-header.header-text-dark .search-wrapper .close::before,.app-header.header-text-dark .search-wrapper .close::after,.app-header.header-text-dark .search-wrapper .input-holder .search-icon span::before{background:rgba(0,0,0,0.8)}
+.app-header.header-text-dark .app-header__logo .logo-src{background:url(assets/images/logo-inverse.png)}
+/* End of app-header and it's child css */
+
+/* header-megamenu css */
+.header-megamenu.nav>li>.nav-link{color:#6c757d;padding-left:.66667rem;padding-right:.66667rem}
+.header-megamenu.nav>li>.nav-link .badge-pill{padding:5px 7px}
+.header-megamenu.nav>li>.nav-link:hover{color:#343a40}
+.header-megamenu.nav>li>.nav-link .fa{margin-top:3px}
+.search-wrapper.active+.header-megamenu {  opacity: 0;}
+/* end of header-megamenu css */
+
+.app-theme-white.app-container{background:#f1f4f6}
+.app-theme-white .app-sidebar{background:#fff}
+.app-theme-white .app-page-title{background:rgba(255,255,255,0.45)}
+
+.hide{
+  display: none;
+}
+/* sidebar css */
+.app-sidebar.closed-sidebar  {
+  transition: all .3s ease;
+  width: 80px;
+  min-width: 80px;
+  flex: 0 0 80px;
+  z-index: 13;
+}
+/* .closed-sidebar .app-sidebar {
+  transition: all .3s ease;
+  width: 80px;
+  min-width: 80px;
+  flex: 0 0 80px;
+  z-index: 13;
+} */
+.closed-sidebar:not(.sidebar-mobile-open) .scrollbar-sidebar {
+  position: static;
+  height: auto;
+  overflow: initial !important;
+}
+.closed-sidebar .app-sidebar__inner .metismenu-icon {
+  text-indent: 0;
+  left: 50%;
+  margin-left: -17px;
+}
+.closed-sidebar .app-sidebar__inner ul li a {
+  text-indent: -99rem;
+  padding: 0;
+}
+.app-sidebar .scrollbar-sidebar {
+  z-index: 15;
+  width: 100%;
+}
+
+.closed-sidebar.fixed-footer .app-footer__inner{margin-left:0 !important}
+.ml-auto, .mx-auto {
+  margin-left: auto !important;
+  padding-right: 14px;
+}
+.ml-auto.badge{
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  min-width: 19px;
+}
+.closed-sidebar .ml-auto{
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+.closed-sidebar:not(.closed-sidebar-mobile) .app-header .app-header__logo{width:80px}
+.closed-sidebar:not(.closed-sidebar-mobile) .app-header .app-header__logo .logo-src{display:none}.closed-sidebar:not(.closed-sidebar-mobile) .app-header .app-header__logo .header__pane{margin-right:auto}
+.closed-sidebar.fixed-sidebar .app-main__outer{padding-left:80px}
+.closed-sidebar.fixed-header:not(.fixed-sidebar) .app-sidebar .app-header__logo{visibility:hidden}
+.closed-sidebar.closed-sidebar-mobile .app-sidebar .app-header__logo,.closed-sidebar.closed-sidebar-mobile .app-header .app-header__logo{width:auto;display:flex}
+.closed-sidebar.closed-sidebar-mobile .app-sidebar .app-header__logo .header__pane,.closed-sidebar.closed-sidebar-mobile .app-header .app-header__logo .header__pane{display:none}.closed-sidebar.closed-sidebar-mobile .app-sidebar .app-header__logo{display:flex;width:80px;padding:0 1.5rem !important}
+.closed-sidebar.closed-sidebar-mobile .app-sidebar .app-header__logo .logo-src{display:block !important;margin:0 auto;width:21px}
+.closed-sidebar.closed-sidebar-mobile .app-sidebar .app-header__logo .header__pane{display:none}
+.closed-sidebar.closed-sidebar-mobile .app-sidebar:hover .app-header__logo{width:280px}
+.closed-sidebar.closed-sidebar-mobile .app-sidebar:hover .app-header__logo .logo-src{width:97px;margin:0}
+.closed-sidebar.closed-sidebar-mobile .app-header{margin-left:0 !important}
+
+.closed-sidebar:not(.closed-sidebar-mobile) .scrollbar-sidebar {
+  margin-right: auto;
+}
+.closed-sidebar:not(.closed-sidebar-mobile) .scrollbar-sidebar {
+  width: 80px;
+}
+.closed-sidebar .app-sidebar__inner .app-sidebar__heading {
+  text-indent: -999em;
+}
+.closed-sidebar .app-sidebar__inner .app-sidebar__heading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #e0f3ff;
+  text-indent: 1px;
+}
+/* .closed-sidebar .app-sidebar:hover{flex:0 0 280px !important;width:280px !important} */
+/* .app-sidebar.closed-sidebar :hover {
+  flex: 0 0 280px !important;
+  width: 280px !important;
+} */
+.fixed-sidebar .app-sidebar {
+  position: fixed;
+  height: 100vh;
+}
+.fixed-sidebar .app-sidebar {
+  height: 100%;
+}
+.app-sidebar.sidebar-shadow {
+  box-shadow: 7px 0 60px rgba(0,0,0,0.05);
+}
+.app-sidebar {
+  width: 280px;
+  display: flex;
+  z-index: 11;
+  overflow: hidden;
+  min-width: 280px;
+  position: relative;
+  flex: 0 0 280px;
+  margin-top: -60px;
+  padding-top: 70px;
+  transition: all .2s;
+}
+.fixed-sidebar.fixed-header .app-sidebar .app-header__logo {
+  display: none;
+}
+.app-sidebar .app-header__logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 11;
+}
+.closed-sidebar .scrollbar-sidebar{
+  z-index: 15;
+  width: 100%;
+  overflow-y: scroll;
+}
+/* .app-sidebar.closed-sidebar:hover {
+  transition: all .3s ease;
+  width: 280px;
+  min-width: 280px;
+  flex: 0 0 280px;
+  z-index: 13;
+} */
+.app-sidebar .scrollbar-sidebar {
+  z-index: 15;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-anchor: none;
+  touch-action: auto;
+}
+.scrollbar-sidebar, .scrollbar-container {
+  position: relative;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #fff;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #dcd8d89e;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(175 174 174 / 10%);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  rgba(54, 54, 54, 0.12);
+}
+.fixed-header .app-main {
+  padding-top: 60px;
+}
+.app-main{z-index:8;position:relative}
+.app-main .app-main__outer{flex:1;flex-direction:column;display:flex;z-index:12}
+.app-main .app-main__inner{padding:30px 30px 0;flex:1}
+.app-wrapper-footer .app-footer{border-top:#e9ecef solid 1px}
+.app-wrapper-footer .app-footer .app-footer__inner{border-left:#e9ecef solid 1px}
+.app-footer{height:60px}
+.app-footer .app-footer__inner{padding:0 1.5rem 0 .75rem;height:60px;display:flex;align-content:center;align-items:center}
+.app-footer .app-footer__inner .app-footer-left{display:flex;align-items:center}
+.app-footer .app-footer__inner .app-footer-right{margin-left:auto;display:flex}
+.app-footer .app-footer__inner .app-footer-left .footer-dots{margin:0 auto}
+
+/* dropdown-menu css */
+.dropdown-menu.show {  animation: fade-in2 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;}
+.dropdown-menu.show {  display: block;}
+.dropdown-menu[x-placement^="top"], .dropdown-menu[x-placement^="right"], .dropdown-menu[x-placement^="bottom"], .dropdown-menu[x-placement^="left"] {  right: auto;  bottom: auto;}
+.dropdown-menu {  box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);  margin: .125rem;}
+.dropdown-menu {  position: absolute;  top: 100%;  left: 0;  z-index: 1000;  display: none;  float: left;  min-width: 15rem;  padding: .65rem 0;  margin: .125rem 0 0;  font-size: .88rem;  color: #495057;  text-align: left;  list-style: none;  background-color: #fff;  background-clip: padding-box;  border: 1px solid rgba(0,0,0,0.15);  border-radius: .25rem;}
+.dropdown-menu .dropdown-item {  font-size: .88rem;  display: flex;  align-items: center;  transition: background-color 0.3s ease, color 0.3s ease;  cursor: pointer;  z-index: 6;  position: relative;}
+.dropdown-menu-rounded {  border-radius: 10px;  padding: .65rem;}
+.dropdown-menu.dropdown-menu-lg {  min-width: 22rem;}
+.dropdown-menu.dropdown-menu-xl {  min-width: 25rem;}
+.dropdown-menu.dropdown-menu-right {  right: 0 !important;}
+.dropdown-menu-right{right:0;left:auto}
+@media (min-width: 576px){.dropdown-menu-sm-right{right:0;left:auto}}@media (min-width: 768px){.dropdown-menu-md-right{right:0;left:auto}}@media (min-width: 992px){.dropdown-menu-lg-right{right:0;left:auto}}@media (min-width: 1200px){.dropdown-menu-xl-right{right:0;left:auto}}
+.dropdown-menu-left{right:auto;left:0}
+@media (min-width: 576px){.dropdown-menu-sm-left{right:auto;left:0}}@media (min-width: 768px){.dropdown-menu-md-left{right:auto;left:0}}@media (min-width: 992px){.dropdown-menu-lg-left{right:auto;left:0}}@media (min-width: 1200px){.dropdown-menu-xl-left{right:auto;left:0}}
+/* end of dropdown menu css */
+/* vertical nav-menu css */
+.vertical-nav-menu{margin:0;padding:0;position:relative;list-style:none}
+.vertical-nav-menu::after{content:" ";pointer-events:none;position:absolute;bottom:0;left:0;right:0;top:0}
+.vertical-nav-menu .mm-collapse{
+  visibility:hidden;
+  max-height: 7.04px;
+    overflow:hidden;
+    transition:max-height 0.5s ease-out;
+    -webkit-transition:max-height 0.5s ease-out;
+}
+.vertical-nav-menu .mm-collapse.visible {
+  /* visibility:visible; */
+  max-height: 500px;
+  transition:max-height 0.5s ease-in;
+  -webkit-transition:max-height 0.5s ease-in;
+}
+/* .vertical-nav-menu .mm-collapse:not(.mm-show){display:none} */
+.vertical-nav-menu ul{margin:0;padding:0;position:relative;list-style:none}.vertical-nav-menu:before{opacity:0;transition:opacity 300ms}
+.vertical-nav-menu li a{display:block;line-height:2.4rem;height:2.4rem;padding:0 1.5rem 0 45px;position:relative;border-radius:.25rem;color:#343a40;white-space:nowrap;transition:all .2s;margin:.1rem 0}.vertical-nav-menu li a:hover{background:#e0f3ff;text-decoration:none}
+.vertical-nav-menu li a:hover i.metismenu-icon{opacity:.6}.vertical-nav-menu li a:hover i.metismenu-state-icon{opacity:1}
+.vertical-nav-menu li.mm-active>a{font-weight:bold}
+.vertical-nav-menu li.mm-active>a i.metismenu-state-icon{transform:rotate(-180deg)}
+.vertical-nav-menu li a.mm-active{color:#3f6ad8;background:#e0f3ff;font-weight:bold}
+.vertical-nav-menu i.metismenu-state-icon,.vertical-nav-menu i.metismenu-icon{text-align:center;width:34px;height:34px;line-height:34px;position:absolute;left:5px;top:50%;margin-top:-17px;font-size:1.5rem;opacity:.3;transition:color 300ms}
+.vertical-nav-menu i.metismenu-state-icon{transition:transform 300ms;left:auto;right:0}
+.vertical-nav-menu ul{transition:padding 300ms;padding:.5em 0 0 2rem}
+.vertical-nav-menu ul:before{content:'';height:100%;opacity:1;width:3px;background:#e0f3ff;position:absolute;left:20px;top:0;border-radius:15px}
+.vertical-nav-menu ul>li>a{color:#6c757d;height:2rem;line-height:2rem;padding:0 1.5rem 0}
+.vertical-nav-menu ul>li>a:hover{color:#3f6ad8}
+.vertical-nav-menu ul>li>a .metismenu-icon{display:none}
+.vertical-nav-menu ul>li>a.mm-active{color:#3f6ad8;background:#e0f3ff;font-weight:bold}
+/* end of vertical nav-menu css */
+/* app-sidebar css */
+.app-sidebar.sidebar-text-light{border-right:0 !important}
+.app-sidebar.sidebar-text-light .app-sidebar__heading{color:rgba(255,255,255,0.6)}
+.app-sidebar.sidebar-text-light .app-sidebar__heading::before{background:rgba(255,255,255,0.5) !important}
+.app-sidebar.sidebar-text-light .vertical-nav-menu li a{color:rgba(255,255,255,0.7)}
+.app-sidebar.sidebar-text-light .vertical-nav-menu li a i.metismenu-icon{opacity:.5}
+.app-sidebar.sidebar-text-light .vertical-nav-menu li a i.metismenu-state-icon{opacity:.5}
+.app-sidebar.sidebar-text-light .vertical-nav-menu li a:hover{background:rgba(255,255,255,0.15);color:#fff}
+.app-sidebar.sidebar-text-light .vertical-nav-menu li a:hover i.metismenu-icon{opacity:.8}
+.app-sidebar.sidebar-text-light .vertical-nav-menu li a:hover i.metismenu-state-icon{opacity:1}
+.app-sidebar.sidebar-text-light .vertical-nav-menu li a.mm-active{color:rgba(255,255,255,0.7);background:rgba(255,255,255,0.15)}
+.app-sidebar.sidebar-text-light .vertical-nav-menu ul:before{background:rgba(255,255,255,0.1)}
+.app-sidebar.sidebar-text-light .vertical-nav-menu ul>li>a{color:rgba(255,255,255,0.6)}
+.app-sidebar.sidebar-text-light .vertical-nav-menu ul>li>a:hover{color:#fff}
+.app-sidebar.sidebar-text-light .vertical-nav-menu ul>li>a.mm-active{color:#fff;background:rgba(255,255,255,0.15)}
+
+.app-sidebar.sidebar-text-light .app-header__logo .logo-src{background:url(assets/images/logo.png)}
+.app-sidebar.sidebar-text-light .app-header__logo .hamburger-inner,.app-sidebar.sidebar-text-light .app-header__logo .hamburger-inner::before,.app-sidebar.sidebar-text-light .app-header__logo .hamburger-inner::after{background-color:rgba(255,255,255,0.8)}.app-sidebar.sidebar-text-dark{border-right:0 !important}
+.app-sidebar.sidebar-text-dark .app-sidebar__heading{color:rgba(0,0,0,0.6)}
+.app-sidebar.sidebar-text-dark .app-sidebar__heading::before{background:rgba(0,0,0,0.5) !important}
+.app-sidebar.sidebar-text-dark .vertical-nav-menu li a{color:rgba(0,0,0,0.6)}
+.app-sidebar.sidebar-text-dark .vertical-nav-menu li a i.metismenu-icon{opacity:.5}
+.app-sidebar.sidebar-text-dark .vertical-nav-menu li a i.metismenu-state-icon{opacity:.5}
+.app-sidebar.sidebar-text-dark .vertical-nav-menu li a:hover{background:rgba(0,0,0,0.15);color:rgba(0,0,0,0.7)}
+.app-sidebar.sidebar-text-dark .vertical-nav-menu li a:hover i.metismenu-icon{opacity:.7}
+.app-sidebar.sidebar-text-dark .vertical-nav-menu li a:hover i.metismenu-state-icon{opacity:1}
+.app-sidebar.sidebar-text-dark .vertical-nav-menu li a.mm-active{color:rgba(0,0,0,0.7);background:rgba(0,0,0,0.15)}
+.app-sidebar.sidebar-text-dark .vertical-nav-menu ul:before{background:rgba(0,0,0,0.1)}
+.app-sidebar.sidebar-text-dark .vertical-nav-menu ul>li>a{color:rgba(0,0,0,0.4)}
+.app-sidebar.sidebar-text-dark .vertical-nav-menu ul>li>a:hover{color:rgba(0,0,0,0.7)}
+.app-sidebar.sidebar-text-dark .vertical-nav-menu ul>li>a.mm-active{color:rgba(0,0,0,0.7);background:rgba(0,0,0,0.15)}
+.app-sidebar .app-sidebar__inner {  padding: 2px 1.5rem 1.5rem;}
+.app-sidebar.sidebar-text-dark .app-header__logo .hamburger-inner,.app-sidebar.sidebar-text-dark .app-header__logo .hamburger-inner::before,.app-sidebar.sidebar-text-dark .app-header__logo .hamburger-inner::after{background-color:rgba(0,0,0,0.8)}
+/* end of app-sidebar css */
+/* dropdown-item css */
+.dropdown-item{display:block;width:100%;padding:.4rem 1.5rem;clear:both;font-weight:400;color:#212529;text-align:inherit;white-space:nowrap;background-color:transparent;border:0}
+.dropdown-item:first-child{border-top-left-radius:calc(.25rem - 1px);border-top-right-radius:calc(.25rem - 1px)}
+.dropdown-item:last-child{border-bottom-right-radius:calc(.25rem - 1px);border-bottom-left-radius:calc(.25rem - 1px)}
+.dropdown-item:hover,.dropdown-item:focus{color:#16181b;text-decoration:none;background-color:#e0f3ff}
+.dropdown-item.active,.dropdown-item:active{color:#fff;text-decoration:none;background-color:#3f6ad8}
+.dropdown-item.disabled,.dropdown-item:disabled{color:#6c757d;pointer-events:none;background-color:transparent}
+/* end of dropdown-item css */
+
+.fixed-footer .app-footer{position:fixed;width:100%;bottom:0;left:0;z-index:7}
+.fixed-footer .app-footer .app-footer__inner{margin-left:280px;box-shadow:0.3rem -0.46875rem 2.1875rem rgba(4,9,20,0.02),0.3rem -0.9375rem 1.40625rem rgba(4,9,20,0.02),0.3rem -0.25rem 0.53125rem rgba(4,9,20,0.04),0.3rem -0.125rem 0.1875rem rgba(4,9,20,0.02)}
+.fixed-footer .app-main .app-main__outer{padding-bottom:60px}
+.footer-dots{display:flex;align-items:center;align-content:center}
+.footer-dots .dots-separator{height:40px;margin:0 .6rem;width:1px;background:#e9ecef}
+
+
+.hamburger{padding:0px 0px;display:inline-block;cursor:pointer;transition-property:opacity, filter;transition-duration:0.15s;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}
+.hamburger.is-active:hover{opacity:.7}
+.hamburger.is-active .hamburger-inner,.hamburger.is-active .hamburger-inner::before,.hamburger.is-active .hamburger-inner::after{background-color:#3f6ad8}
+.hamburger-box{width:24px;height:14px;display:inline-block;position:relative}
+.hamburger-inner{display:block;top:50%;margin-top:-1px}
+.hamburger-inner,.hamburger-inner::before,.hamburger-inner::after{width:24px;height:2px;background-color:#3f6ad8;border-radius:10px;position:absolute;transition-property:transform;transition-duration:0.15s;transition-timing-function:ease}
+.hamburger-inner::before,.hamburger-inner::after{content:"";display:block}
+.hamburger-inner::before{top:-6px}
+.hamburger-inner::after{bottom:-6px}
+.hamburger--elastic .hamburger-inner{top:1px;transition-duration:0.275s;transition-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55)}
+.hamburger--elastic .hamburger-inner::before{top:6px;transition:opacity 0.125s 0.275s ease}
+.hamburger--elastic .hamburger-inner::after{top:12px;transition:transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55)}
+.hamburger--elastic.is-active .hamburger-inner{transform:translate3d(0, 6px, 0) rotate(135deg);transition-delay:0.075s}
+.hamburger--elastic.is-active .hamburger-inner::before{transition-delay:0s;opacity:0}
+.hamburger--elastic.is-active .hamburger-inner::after{transform:translate3d(0, -12px, 0) rotate(-270deg);transition-delay:0.075s}
+/*  button design */
+
+button{border-radius:0}
+button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}
+input,button,select,optgroup,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}
+button,select{text-transform:none}
+button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{padding:0;border-style:none}
+
+button, [type="button"], [type="reset"], [type="submit"] {  -webkit-appearance: button;}
+
+button, select {  text-transform: none;}
+button, input {  overflow: visible;}
+
+
+/* button-focus css */
+.btn-focus{color:#fff;background-color:#444054;border-color:#444054}
+.btn-focus:hover{color:#fff;background-color:#322f3e;border-color:#2d2a37}
+.btn-focus:focus,.btn-focus.focus{box-shadow:0 0 0 0 rgba(96,93,110,0.5)}
+.btn-focus.disabled,.btn-focus:disabled{color:#fff;background-color:#444054;border-color:#444054}
+.btn-focus:not(:disabled):not(.disabled):active,.btn-focus:not(:disabled):not(.disabled).active,.show>.btn-focus.dropdown-toggle{color:#fff;background-color:#2d2a37;border-color:#272430}
+.btn-focus:not(:disabled):not(.disabled):active:focus,.btn-focus:not(:disabled):not(.disabled).active:focus,.show>.btn-focus.dropdown-toggle:focus{box-shadow:0 0 0 0 rgba(96,93,110,0.5)}
+.btn-focus.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(68,64,84,0.4),0 0.0625rem 0.125rem rgba(68,64,84,0.5)}
+.btn-focus.btn-shadow:hover{box-shadow:0 0.125rem 0.625rem rgba(68,64,84,0.5),0 0.0625rem 0.125rem rgba(68,64,84,0.6)}
+/* end of button-focus css */
+
+/* btn-alternate css */
+.btn-alternate{color:#fff;background-color:#794c8a;border-color:#794c8a}
+.btn-alternate:hover{color:#fff;background-color:#633e71;border-color:#5c3a69}
+.btn-alternate:focus,.btn-alternate.focus{box-shadow:0 0 0 0 rgba(141,103,156,0.5)}
+.btn-alternate.disabled,.btn-alternate:disabled{color:#fff;background-color:#794c8a;border-color:#794c8a}
+.btn-alternate:not(:disabled):not(.disabled):active,.btn-alternate:not(:disabled):not(.disabled).active,.show>.btn-alternate.dropdown-toggle{color:#fff;background-color:#5c3a69;border-color:#553561}
+.btn-alternate:not(:disabled):not(.disabled):active:focus,.btn-alternate:not(:disabled):not(.disabled).active:focus,.show>.btn-alternate.dropdown-toggle:focus{box-shadow:0 0 0 0 rgba(141,103,156,0.5)}
+.btn-alternate.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(121,76,138,0.4),0 0.0625rem 0.125rem rgba(121,76,138,0.5)}
+.btn-alternate.btn-shadow:hover{box-shadow:0 0.125rem 0.625rem rgba(121,76,138,0.5),0 0.0625rem 0.125rem rgba(121,76,138,0.6)}
+/* end of btn-alternate css */
+/* btn-outline-primary css */
+.btn-outline-primary{color:#3f6ad8;border-color:#3f6ad8}
+.btn-outline-primary:hover{color:#fff;background-color:#3f6ad8;border-color:#3f6ad8}
+.btn-outline-primary:focus,.btn-outline-primary.focus{box-shadow:0 0 0 0 rgba(63,106,216,0.5)}
+.btn-outline-primary.disabled,.btn-outline-primary:disabled{color:#3f6ad8;background-color:transparent}
+.btn-outline-primary:not(:disabled):not(.disabled):active,.btn-outline-primary:not(:disabled):not(.disabled).active,.show>.btn-outline-primary.dropdown-toggle{color:#fff;background-color:#3f6ad8;border-color:#3f6ad8}
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,.btn-outline-primary:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-primary.dropdown-toggle:focus{box-shadow:0 0 0 0 rgba(63,106,216,0.5)}
+.btn-outline-primary.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(63,106,216,0.4),0 0.0625rem 0.125rem rgba(63,106,216,0.5)}
+.btn-outline-primary.btn-shadow.active:hover,.btn-outline-primary.btn-shadow.disabled:hover,.btn-outline-primary.btn-shadow:active:hover,.btn-outline-primary.btn-shadow:disabled:hover{box-shadow:0 0.125rem 0.625rem rgba(63,106,216,0.5),0 0.0625rem 0.125rem rgba(63,106,216,0.6)}
+.btn-outline-primary.btn-shadow:hover{box-shadow:0px 5px 15px 2px rgba(63,106,216,0.19)}
+/* end of btn-outline-primary css */
+/* btn-outline-secondary css */
+.btn-outline-secondary{color:#6c757d;border-color:#6c757d}.btn-outline-secondary:hover{color:#fff;background-color:#6c757d;border-color:#6c757d}.btn-outline-secondary:focus,.btn-outline-secondary.focus{box-shadow:0 0 0 0 rgba(108,117,125,0.5)}.btn-outline-secondary.disabled,.btn-outline-secondary:disabled{color:#6c757d;background-color:transparent}.btn-outline-secondary:not(:disabled):not(.disabled):active,.btn-outline-secondary:not(:disabled):not(.disabled).active,.show>.btn-outline-secondary.dropdown-toggle{color:#fff;background-color:#6c757d;border-color:#6c757d}.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-secondary.dropdown-toggle:focus{box-shadow:0 0 0 0 rgba(108,117,125,0.5)}.btn-outline-secondary.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(108,117,125,0.4),0 0.0625rem 0.125rem rgba(108,117,125,0.5)}.btn-outline-secondary.btn-shadow.active:hover,.btn-outline-secondary.btn-shadow.disabled:hover,.btn-outline-secondary.btn-shadow:active:hover,.btn-outline-secondary.btn-shadow:disabled:hover{box-shadow:0 0.125rem 0.625rem rgba(108,117,125,0.5),0 0.0625rem 0.125rem rgba(108,117,125,0.6)}.btn-outline-secondary.btn-shadow:hover{box-shadow:0px 5px 15px 2px rgba(108,117,125,0.19)}
+/* end of btn-outline-secondary css */
+/* btn-outline-success */
+.btn-outline-success{color:#3ac47d;border-color:#3ac47d}
+.btn-outline-success:hover{color:#fff;background-color:#3ac47d;border-color:#3ac47d}
+.btn-outline-success:focus,.btn-outline-success.focus{box-shadow:0 0 0 0 rgba(58,196,125,0.5)}
+.btn-outline-success.disabled,.btn-outline-success:disabled{color:#3ac47d;background-color:transparent}
+.btn-outline-success:not(:disabled):not(.disabled):active,.btn-outline-success:not(:disabled):not(.disabled).active,.show>.btn-outline-success.dropdown-toggle{color:#fff;background-color:#3ac47d;border-color:#3ac47d}
+.btn-outline-success:not(:disabled):not(.disabled):active:focus,.btn-outline-success:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-success.dropdown-toggle:focus{box-shadow:0 0 0 0 rgba(58,196,125,0.5)}
+.btn-outline-success.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(58,196,125,0.4),0 0.0625rem 0.125rem rgba(58,196,125,0.5)}
+.btn-outline-success.btn-shadow.active:hover,.btn-outline-success.btn-shadow.disabled:hover,.btn-outline-success.btn-shadow:active:hover,.btn-outline-success.btn-shadow:disabled:hover{box-shadow:0 0.125rem 0.625rem rgba(58,196,125,0.5),0 0.0625rem 0.125rem rgba(58,196,125,0.6)}
+.btn-outline-success.btn-shadow:hover{box-shadow:0px 5px 15px 2px rgba(58,196,125,0.19)}
+/* end of btn-outline-success */
+/* btn-outline-info */
+.btn-outline-info{color:#16aaff;border-color:#16aaff}
+.btn-outline-info:hover{color:#fff;background-color:#16aaff;border-color:#16aaff}
+.btn-outline-info:focus,.btn-outline-info.focus{box-shadow:0 0 0 0 rgba(22,170,255,0.5)}
+.btn-outline-info.disabled,.btn-outline-info:disabled{color:#16aaff;background-color:transparent}
+.btn-outline-info:not(:disabled):not(.disabled):active,.btn-outline-info:not(:disabled):not(.disabled).active,.show>.btn-outline-info.dropdown-toggle{color:#fff;background-color:#16aaff;border-color:#16aaff}
+.btn-outline-info:not(:disabled):not(.disabled):active:focus,.btn-outline-info:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-info.dropdown-toggle:focus{box-shadow:0 0 0 0 rgba(22,170,255,0.5)}
+.btn-outline-info.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(22,170,255,0.4),0 0.0625rem 0.125rem rgba(22,170,255,0.5)}
+.btn-outline-info.btn-shadow.active:hover,.btn-outline-info.btn-shadow.disabled:hover,.btn-outline-info.btn-shadow:active:hover,.btn-outline-info.btn-shadow:disabled:hover{box-shadow:0 0.125rem 0.625rem rgba(22,170,255,0.5),0 0.0625rem 0.125rem rgba(22,170,255,0.6)}
+.btn-outline-info.btn-shadow:hover{box-shadow:0px 5px 15px 2px rgba(22,170,255,0.19)}
+/* end of btn-outline-info */
+/* btn-outline-warning */
+.btn-outline-warning{color:#f7b924;border-color:#f7b924}
+.btn-outline-warning:hover{color:#212529;background-color:#f7b924;border-color:#f7b924}
+.btn-outline-warning:focus,.btn-outline-warning.focus{box-shadow:0 0 0 0 rgba(247,185,36,0.5)}
+.btn-outline-warning.disabled,.btn-outline-warning:disabled{color:#f7b924;background-color:transparent}
+.btn-outline-warning:not(:disabled):not(.disabled):active,.btn-outline-warning:not(:disabled):not(.disabled).active,.show>.btn-outline-warning.dropdown-toggle{color:#212529;background-color:#f7b924;border-color:#f7b924}
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus,.btn-outline-warning:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-warning.dropdown-toggle:focus{box-shadow:0 0 0 0 rgba(247,185,36,0.5)}
+.btn-outline-warning.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(247,185,36,0.4),0 0.0625rem 0.125rem rgba(184, 161, 109, 0.5)}
+.btn-outline-warning.btn-shadow.active:hover,.btn-outline-warning.btn-shadow.disabled:hover,.btn-outline-warning.btn-shadow:active:hover,.btn-outline-warning.btn-shadow:disabled:hover{box-shadow:0 0.125rem 0.625rem rgba(247,185,36,0.5),0 0.0625rem 0.125rem rgba(247,185,36,0.6)}
+.btn-outline-warning.btn-shadow:hover{box-shadow:0px 5px 15px 2px rgba(247,185,36,0.19)}
+/* end of btn-outline-warning */
+/* btn-outline-danger */
+.btn-outline-danger{color:#d92550;border-color:#d92550}
+.btn-outline-danger:hover{color:#fff;background-color:#d92550;border-color:#d92550}
+.btn-outline-danger:focus,.btn-outline-danger.focus{box-shadow:0 0 0 0 rgba(217,37,80,0.5)}
+.btn-outline-danger.disabled,.btn-outline-danger:disabled{color:#d92550;background-color:transparent}
+.btn-outline-danger:not(:disabled):not(.disabled):active,.btn-outline-danger:not(:disabled):not(.disabled).active,.show>.btn-outline-danger.dropdown-toggle{color:#fff;background-color:#d92550;border-color:#d92550}
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus,.btn-outline-danger:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-danger.dropdown-toggle:focus{box-shadow:0 0 0 0 rgba(217,37,80,0.5)}
+.btn-outline-danger.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(217,37,80,0.4),0 0.0625rem 0.125rem rgba(217,37,80,0.5)}
+.btn-outline-danger.btn-shadow.active:hover,.btn-outline-danger.btn-shadow.disabled:hover,.btn-outline-danger.btn-shadow:active:hover,.btn-outline-danger.btn-shadow:disabled:hover{box-shadow:0 0.125rem 0.625rem rgba(217,37,80,0.5),0 0.0625rem 0.125rem rgba(217,37,80,0.6)}
+.btn-outline-danger.btn-shadow:hover{box-shadow:0px 5px 15px 2px rgba(217,37,80,0.19)}
+/* end of btn-outline-danger */
+/* btn-outline-light */
+.btn-outline-light{color:#eee;border-color:#eee}
+.btn-outline-light:hover{color:#212529;background-color:#eee;border-color:#eee}
+.btn-outline-light:focus,.btn-outline-light.focus{box-shadow:0 0 0 0 rgba(238,238,238,0.5)}
+.btn-outline-light.disabled,.btn-outline-light:disabled{color:#eee;background-color:transparent}
+.btn-outline-light:not(:disabled):not(.disabled):active,.btn-outline-light:not(:disabled):not(.disabled).active,.show>.btn-outline-light.dropdown-toggle{color:#212529;background-color:#eee;border-color:#eee}
+.btn-outline-light:not(:disabled):not(.disabled):active:focus,.btn-outline-light:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-light.dropdown-toggle:focus{box-shadow:0 0 0 0 rgba(238,238,238,0.5)}
+.btn-outline-light.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(238,238,238,0.4),0 0.0625rem 0.125rem rgba(238,238,238,0.5)}
+.btn-outline-light.btn-shadow.active:hover,.btn-outline-light.btn-shadow.disabled:hover,.btn-outline-light.btn-shadow:active:hover,.btn-outline-light.btn-shadow:disabled:hover{box-shadow:0 0.125rem 0.625rem rgba(238,238,238,0.5),0 0.0625rem 0.125rem rgba(238,238,238,0.6)}
+.btn-outline-light.btn-shadow:hover{box-shadow:0px 5px 15px 2px rgba(238,238,238,0.19)}
+/* end of btn-outline-light */
+/* btn-outline-dark */
+.btn-outline-dark{color:#343a40;border-color:#343a40}
+.btn-outline-dark:hover{color:#fff;background-color:#343a40;border-color:#343a40}
+.btn-outline-dark:focus,.btn-outline-dark.focus{box-shadow:0 0 0 0 rgba(52,58,64,0.5)}
+.btn-outline-dark.disabled,.btn-outline-dark:disabled{color:#343a40;background-color:transparent}
+.btn-outline-dark:not(:disabled):not(.disabled):active,.btn-outline-dark:not(:disabled):not(.disabled).active,.show>.btn-outline-dark.dropdown-toggle{color:#fff;background-color:#343a40;border-color:#343a40}
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus,.btn-outline-dark:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-dark.dropdown-toggle:focus{box-shadow:0 0 0 0 rgba(52,58,64,0.5)}
+.btn-outline-dark.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(52,58,64,0.4),0 0.0625rem 0.125rem rgba(52,58,64,0.5)}
+.btn-outline-dark.btn-shadow.active:hover,.btn-outline-dark.btn-shadow.disabled:hover,.btn-outline-dark.btn-shadow:active:hover,.btn-outline-dark.btn-shadow:disabled:hover{box-shadow:0 0.125rem 0.625rem rgba(52,58,64,0.5),0 0.0625rem 0.125rem rgba(52,58,64,0.6)}
+.btn-outline-dark.btn-shadow:hover{box-shadow:0px 5px 15px 2px rgba(52,58,64,0.19)}
+/* end of btn-outline-dark */
+/* btn-outline-focus */
+.btn-outline-focus.btn-outline-focus{color:#444054;border-color:#444054}
+.btn-outline-focus:hover{color:#fff;background-color:#444054;border-color:#444054}
+.btn-outline-focus:focus,.btn-outline-focus.focus{box-shadow:0 0 0 0 rgba(68,64,84,0.5)}
+.btn-outline-focus.disabled,.btn-outline-focus:disabled{color:#444054;background-color:transparent}
+.btn-outline-focus:not(:disabled):not(.disabled):active,.btn-outline-focus:not(:disabled):not(.disabled).active,.show>.btn-outline-focus.dropdown-toggle{color:#fff;background-color:#444054;border-color:#444054}
+.btn-outline-focus:not(:disabled):not(.disabled):active:focus,.btn-outline-focus:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-focus.dropdown-toggle:focus{box-shadow:0 0 0 0 rgba(68,64,84,0.5)}
+.btn-outline-focus.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(68,64,84,0.4),0 0.0625rem 0.125rem rgba(68,64,84,0.5)}
+.btn-outline-focus.btn-shadow.active:hover,.btn-outline-focus.btn-shadow.disabled:hover,.btn-outline-focus.btn-shadow:active:hover,.btn-outline-focus.btn-shadow:disabled:hover{box-shadow:0 0.125rem 0.625rem rgba(68,64,84,0.5),0 0.0625rem 0.125rem rgba(68,64,84,0.6)}
+.btn-outline-focus.btn-shadow:hover{box-shadow:0px 5px 15px 2px rgba(68,64,84,0.19)}
+/* end of btn-outline-focus */
+/* btn-outline-alternate */
+.btn-outline-alternate{color:#794c8a;border-color:#794c8a}
+.btn-outline-alternate:hover{color:#fff;background-color:#794c8a;border-color:#794c8a}
+.btn-outline-alternate:focus,.btn-outline-alternate.focus{box-shadow:0 0 0 0 rgba(121,76,138,0.5)}
+.btn-outline-alternate.disabled,.btn-outline-alternate:disabled{color:#794c8a;background-color:transparent}
+.btn-outline-alternate:not(:disabled):not(.disabled):active,.btn-outline-alternate:not(:disabled):not(.disabled).active,.show>.btn-outline-alternate.dropdown-toggle{color:#fff;background-color:#794c8a;border-color:#794c8a}
+.btn-outline-alternate:not(:disabled):not(.disabled):active:focus,.btn-outline-alternate:not(:disabled):not(.disabled).active:focus,.show>.btn-outline-alternate.dropdown-toggle:focus{box-shadow:0 0 0 0 rgba(121,76,138,0.5)}
+.btn-outline-alternate.btn-shadow{box-shadow:0 0.125rem 0.625rem rgba(121,76,138,0.4),0 0.0625rem 0.125rem rgba(121,76,138,0.5)}
+.btn-outline-alternate.btn-shadow.active:hover,.btn-outline-alternate.btn-shadow.disabled:hover,.btn-outline-alternate.btn-shadow:active:hover,.btn-outline-alternate.btn-shadow:disabled:hover{box-shadow:0 0.125rem 0.625rem rgba(121,76,138,0.5),0 0.0625rem 0.125rem rgba(121,76,138,0.6)}
+.btn-outline-alternate.btn-shadow:hover{box-shadow:0px 5px 15px 2px rgba(121,76,138,0.19)}
+.btn{position:relative;transition:color 0.15s,background-color 0.15s,border-color 0.15s,box-shadow 0.15s}
+/* end of btn-outline-alternate */
+/* dropdown menu css */
+.dropdown-menu-header{color:#fff;margin-top:-.65rem;margin-bottom:.65rem;position:relative;z-index:6}
+.dropdown-menu-header .dropdown-menu-header-inner{margin:-1px -1px 0;padding:1.5rem .5rem;position:relative}
+.dropdown-menu-header .menu-header-image{position:absolute;left:0;top:0;height:100%;width:100%;z-index:8;opacity:.25;filter:grayscale(80%);background-size:cover}
+.dropdown-menu-header .menu-header-content{text-align:center;position:relative;z-index:10}
+.dropdown-menu-header .menu-header-content.text-left{padding-left:.5rem}
+.dropdown-menu-header .menu-header-content.btn-pane-right{padding-left:.5rem;padding-right:.5rem;display:flex;align-content:center;align-items:center;text-align:left}
+.dropdown-menu-header .menu-header-content.btn-pane-right .menu-header-btn-pane{margin:0 0 0 auto}
+.dropdown-menu-header .menu-header-content .menu-header-btn-pane{margin-top:10px;margin-bottom:3px}
+/* end of dropdown menu css */
+/* button single css */
+.btn-shadow-primary:hover{box-shadow:0 0.125rem 0.625rem rgba(63,106,216,0.4),0 0.0625rem 0.125rem rgba(63,106,216,0.5)}
+.btn-shadow-secondary:hover{box-shadow:0 0.125rem 0.625rem rgba(108,117,125,0.4),0 0.0625rem 0.125rem rgba(108,117,125,0.5)}
+.btn-shadow-success:hover{box-shadow:0 0.125rem 0.625rem rgba(58,196,125,0.4),0 0.0625rem 0.125rem rgba(58,196,125,0.5)}
+.btn-shadow-info:hover{box-shadow:0 0.125rem 0.625rem rgba(22,170,255,0.4),0 0.0625rem 0.125rem rgba(22,170,255,0.5)}
+.btn-shadow-warning:hover{box-shadow:0 0.125rem 0.625rem rgba(247,185,36,0.4),0 0.0625rem 0.125rem rgba(247,185,36,0.5)}
+.btn-shadow-danger:hover{box-shadow:0 0.125rem 0.625rem rgba(217,37,80,0.4),0 0.0625rem 0.125rem rgba(217,37,80,0.5)}
+.btn-shadow-light:hover{box-shadow:0 0.125rem 0.625rem rgba(238,238,238,0.4),0 0.0625rem 0.125rem rgba(238,238,238,0.5)}
+.btn-shadow-dark:hover{box-shadow:0 0.125rem 0.625rem rgba(52,58,64,0.4),0 0.0625rem 0.125rem rgba(52,58,64,0.5)}
+.btn-shadow-focus:hover{box-shadow:0 0.125rem 0.625rem rgba(68,64,84,0.4),0 0.0625rem 0.125rem rgba(68,64,84,0.5)}
+.btn-shadow-alternate:hover{box-shadow:0 0.125rem 0.625rem rgba(121,76,138,0.4),0 0.0625rem 0.125rem rgba(121,76,138,0.5)}
+/* end of button single css */
+
+/* button-icon css */
+
+.btn-icon.btn-link{text-decoration:none}
+.btn-icon.btn-lg:not(.btn-block) .btn-icon-wrapper,.btn-group-lg>.btn-icon.btn:not(.btn-block) .btn-icon-wrapper{font-size:25px}.btn-hover-shine{position:relative}.btn-hover-shine:after{content:'';position:absolute;top:0;left:0;width:0;height:100%;background-color:rgba(255,255,255,0.4);-webkit-transition:none;-moz-transition:none;transition:none}.btn-hover-shine:hover:after{width:120%;background-color:rgba(255,255,255,0);transition:all 0.4s ease-in-out}.btn-hover-shine.btn-pill::after{border-top-left-radius:50px;border-bottom-left-radius:50px;border-top-right-radius:50px;border-bottom-right-radius:50px}
+.btn-icon-vertical{padding-top:1rem;padding-bottom:1rem;min-width:100px}
+.btn-icon-vertical .btn-icon-wrapper{display:block;font-size:200%;margin:5px 0;opacity:.6}
+.btn-icon-vertical.btn-link{text-decoration:none}
+.btn-icon-vertical.btn-lg:not(.btn-block) .btn-icon-wrapper,.btn-group-lg>.btn-icon-vertical.btn:not(.btn-block) .btn-icon-wrapper{font-size:25px}
+.btn-icon-vertical.btn-sm:not(.btn-block) .btn-icon-wrapper,.btn-group-sm>.btn-icon-vertical.btn:not(.btn-block) .btn-icon-wrapper{font-size:16px}
+.btn-icon-vertical:active .btn-icon-wrapper,.btn-icon-vertical.active .btn-icon-wrapper,.btn-icon-vertical:hover .btn-icon-wrapper{opacity:1}
+.btn-icon-vertical.btn-icon-bottom .btn-icon-wrapper{margin:.2rem 0 5px}
+.btn-icon-vertical.btn-transition-text .btn-icon-wrapper{transition:all .2s !important}
+.btn-icon-vertical.btn-transition-text:hover .btn-icon-wrapper{transform:scale(1.3)}
+.btn-icon-vertical.btn-transition-text.btn-transition-alt:hover .btn-icon-wrapper{color:#fff !important}
+.btn-icon-lg{font-size:2.5rem !important}
+/* end of button-icon css */
+/* button icon css */
+.btn-icon.btn-sm:not(.btn-block) .btn-icon-wrapper, .btn-group-sm>.btn-icon.btn:not(.btn-block) .btn-icon-wrapper {  font-size: 20px;}
+
+.btn-icon-only .btn-icon-wrapper {  margin-left: 0;  margin-right: 0;}
+.btn-icon .btn-icon-wrapper {  margin-right: 0;  margin-left: 0;  margin-top: 2px;  font-size: 17px;  vertical-align: middle;  transition: color .1s;  display: inline-block;}
+.btn-icon{vertical-align:middle; padding-top: 1px;}
+.btn-icon.btn-icon-right .btn-icon-wrapper{margin-left:.5rem;margin-right:0}
+/* end of button icon css */
+
+/* badge css */
+
+.btn .badge-dot-inside{top:10px;right:10px}
+.btn-sm .badge-dot-sm,.btn-group-sm>.btn .badge-dot-sm{top:1px;right:4px}
+.btn-sm .badge-dot,.btn-group-sm>.btn .badge-dot{top:0px;right:2px}
+.btn-sm .badge-dot-lg,.btn-group-sm>.btn .badge-dot-lg{top:-3px;right:-2px}
+.btn .badge-dot.badge-dot-sm {  width: 8px;  height: 8px;  border-width: 1px;}
+.dot-btn-wrapper .badge-abs.badge-dot-sm {  top: -2px;  margin-right: -3px;}
+.dot-btn-wrapper .badge-abs {  right: 50%;}
+.dot-btn-wrapper{padding:.5rem;position:relative;display:flex;opacity:.7;transition:opacity .2s;cursor:pointer}
+.dot-btn-wrapper .dot-btn-icon{font-size:1.8rem}
+.dot-btn-wrapper:hover{text-decoration:none;opacity:1}
+.badge-abs {  position: absolute;  right: -3px;  top: -3px;}
+.badge {  font-weight: bold;  text-transform: uppercase;  padding: 5px 5px;  min-width: 10px;}
+.badge{display:inline-block;padding:.25em .4em;font-size:75%;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25rem}
+a.badge:hover,a.badge:focus{text-decoration:none}
+.badge:empty{display:none}
+.btn .badge{position:relative;top:-1px}
+.btn .badge {  margin-left: 8px;}
+.badge-pill{padding-right:.6em;padding-left:.6em;border-radius:10rem}
+.badge-primary{color:#fff;background-color:#3f6ad8}
+a.badge-primary:hover,a.badge-primary:focus{color:#fff;background-color:#2651be}
+.badge-secondary{color:#fff;background-color:#6c757d}
+a.badge-secondary:hover,a.badge-secondary:focus{color:#fff;background-color:#545b62}
+.badge-success{color:#fff;background-color:#3ac47d}
+a.badge-success:hover,a.badge-success:focus{color:#fff;background-color:#2e9d64}
+.badge-info{color:#fff;background-color:#16aaff}
+a.badge-info:hover,a.badge-info:focus{color:#fff;background-color:#0090e2}
+.badge-warning{color:#212529;background-color:#f7b924}
+a.badge-warning:hover,a.badge-warning:focus{color:#212529;background-color:#e0a008}
+a.badge-danger:hover,a.badge-danger:focus{color:#fff;background-color:#ad1e40}
+.badge-light{color:#212529;background-color:#eee}
+a.badge-light:hover,a.badge-light:focus{color:#212529;background-color:#d5d5d5}
+.badge-dark{color:#fff;background-color:#343a40}a.badge-dark:hover,a.badge-dark:focus{color:#fff;background-color:#1d2124}
+.badge-focus{color:#fff;background-color:#444054}a.badge-focus:hover,a.badge-focus:focus{color:#fff;background-color:#2d2a37}
+.badge-alternate{color:#fff;background-color:#794c8a}
+a.badge-alternate:hover,a.badge-alternate:focus{color:#fff;background-color:#5c3a69}
+.badge-dot-sm {  width: 6px;  height: 6px;}
+.badge-dot {  text-indent: -999em;  padding: 0;  width: 8px;  height: 8px;  border: transparent solid 1px;  border-radius: 30px;  min-width: 2px;}
+
+.btn .badge-dot {  position: absolute;  border: #fff solid 2px;  top: -5px;  right: -5px;  width: 11px;  height: 11px;}
+/* end of badge css */
+input, button, select, optgroup, textarea {  margin: 0;  font-family: inherit;  font-size: inherit;  line-height: inherit;}
+.nav{  display: flex;  flex-wrap: wrap;  padding-left: 0;  margin-bottom: 0;  list-style: none;}
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+@keyframes fade-in2{0%{margin-top:-50px;visibility:hidden;opacity:0}100%{margin-top:0px;visibility:visible;opacity:1}}
+pre{margin-top:0;margin-bottom:1rem;overflow:auto}
+.header-megamenu.nav>li>.nav-link:hover {
+  color: #343a40;
+}
+.header-megamenu.nav>li>.nav-link {
+  color: #6c757d;
+  padding-left: .66667rem;
+  padding-right: .66667rem;
+}
+.nav-link:hover {
+  cursor: pointer;
+}
+.nav-link:hover {
+  color: #495057;
+}
+.nav-item .nav-link {
+  font-weight: normal;
+}
+.nav-link:hover, .nav-link:focus {
+  text-decoration: none;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+.nav-link {
+  font-weight: bold;
+}
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.app-header.header-text-light .app-header-left>.nav>li>.nav-link .nav-link-icon {
+  color: rgba(255,255,255,0.8);
+}
+@media (max-width: 991.98px){
+  .app-header {
+      justify-content: space-between;
+  }
+  .app-header .app-header__logo {
+    display: none;
+    order: 2;
+    background: transparent !important;
+    border: 0 !important;
+  }
+  .app-header .app-header__mobile-menu {
+    display: flex;
+    order: 1;
+  }
+  .app-header .app-header__menu {
+    display: flex;
+    order: 3;
+  }
+
+.app-header .app-header__content{visibility:hidden;opacity:0;box-shadow:0 0.46875rem 2.1875rem rgba(4,9,20,0.03),0 0.9375rem 1.40625rem rgba(4,9,20,0.03),0 0.25rem 0.53125rem rgba(4,9,20,0.05),0 0.125rem 0.1875rem rgba(4,9,20,0.03);position:absolute;left:5%;width:90%;top:0;transition:all .2s;background:#fff;border-radius:50px;padding:0 10px;overflow:hidden}
+.app-header .app-header__content .header-btn-lg{margin-left:.5rem;padding:0 .5rem}
+.app-header .app-header__content .header-btn-lg .hamburger-box{margin-top:5px}
+.app-header .app-header__content .header-btn-lg+.header-btn-lg{display:none}
+.app-header .app-header__content .app-header-left .nav{display:none}
+.app-header .app-header__content.header-mobile-open{visibility:visible;opacity:1;top:80px}
+}
+.nav-link:hover .nav-link-icon {
+  opacity: .9;
+  color: #3f6ad8;
+}
+
+.nav-link .nav-link-icon {
+  color: #3f6ad8;
+  font-size: 1rem;
+  width: 30px;
+  text-align: center;
+  opacity: .45;
+  margin-left: -10px;
+}
+[class^="pe-7s-"], [class*=" pe-7s-"] {
+  display: inline-block;
+  font-family: 'Pe-icon-7-stroke';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.header-megamenu.nav>li>.nav-link .fa {
+  margin-top: 3px;
+}
+.fa, .fas, .far, .fal, .fad, .fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.fa, .fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.opacity-5 {
+  opacity: .5 !important;
+}
+.ml-2, .mx-2 {
+  margin-left: .5rem !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.dropdown-mega-menu{width:56rem;padding:1rem}
+.dropdown-mega-menu .nav-item.nav-item-header{text-transform:none;font-size:1rem;padding-top:0;font-weight:normal}
+.dropdown-mega-menu .grid-menu{margin-bottom:0}
+.dropdown-mega-menu-sm{width:40rem}body .dropdown-menu.dropdown-menu-inline{border:0;position:static !important;box-shadow:0 0 0 transparent;background:transparent;border-radius:0;display:inline-block;float:none;left:0 !important;top:0 !important;width:100% !important;transform:translateY(0) !important}
+.popover .grid-menu{margin-bottom:-.5rem;padding:1px}
+.my-mega-menu .popover{ max-width: 57rem;}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+@media (min-width: 1200px){
+  .dropdown-mega-menu .grid-menu.grid-menu-3col [class*="col-"]:nth-last-child(-n+3){border-bottom-width:0px}
+  .dropdown-mega-menu .grid-menu.grid-menu-3col [class*="col-"]:nth-child(2n){border-right-width:1px}
+  .dropdown-mega-menu .grid-menu.grid-menu-3col [class*="col-"]:nth-child(3n){border-right-width:0}
+}
+
+@media (min-width: 1200px){
+  .grid-menu.grid-menu-3col [class*="col-"]:nth-last-child(-n+3){border-bottom-width:1px}
+  .grid-menu.grid-menu-3col [class*="col-"]:nth-child(2n){border-right-width:1px}
+  .grid-menu.grid-menu-3col [class*="col-"]:nth-child(3n){border-right-width:0}
+}
+@media (min-width: 576px){
+  .grid-menu [class*="col-"]:nth-last-child(-n+2){border-bottom-width:0}
+  .grid-menu [class*="col-"]:nth-child(1n){border-right-width:1px}
+  .grid-menu [class*="col-"]:nth-child(2n){border-right-width:0}
+}
+
+.dropdown-menu .grid-menu-xl [class*="col-"] {
+  padding: 0;
+}
+.grid-menu [class*="col-"]:hover {
+    z-index: 5;
+}
+.grid-menu [class*="col-"] {
+  border-right: #ced0d2 solid 0;
+  border-bottom: #ced0d2 solid 1px;
+}
+.no-gutters>.col, .no-gutters>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+@media (min-width: 1200px) {
+  .col-xl-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+@media (min-width: 576px) {
+.col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.popover:not([data-placement^="top"]).show {
+  animation: fade-in2 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.popover-header:empty{display:none}
+.popover-header{padding:.5rem .75rem;margin-bottom:0;font-size:.88rem;color:inherit;background-color:#fff;border-bottom:1px solid #f2f2f2;border-top-left-radius:calc(.3rem - 1px);border-top-right-radius:calc(.3rem - 1px)}
+.rm-max-width .popover {
+  max-width: initial !important;
+}
+.popover.show, .tooltip.show {
+  opacity: 1;
+}
+.popover {
+  box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+}
+.popover, .tooltip {
+  opacity: 1;
+  transition: opacity .2s ease;
+}
+.bs-popover-bottom, .bs-popover-auto[x-placement^="bottom"] {
+  margin-top: .5rem;
+}
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: block;
+  max-width: 320px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: .875rem;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(26,54,126,0.125);
+  border-radius: .3rem;
+}
+.popover-body{padding:.5rem .75rem;color:#212529}
+.fade {
+  transition: opacity 0.15s linear;
+}
+
+a, button, .btn {
+  outline: none !important;
+}
+a {
+  color: #3f6ad8;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.fixed-sidebar .app-main .app-main__outer {
+  z-index: 9;
+  padding-left: 280px;
+}
+.fixed-sidebar .app-main .app-wrapper-footer {
+  z-index: 10;
+  padding-left: 280px;
+}
+
+
+/* all country flags css */
+.flag {
+  height: 28px;
+  width: 38px;
+  background-size: 36px 26px;
+}
+.flag-optimized{
+  height: 28px;
+  width: 38px;
+  background-size: 36px 30px;
+}
+.opacity-8 {
+  opacity: .8 !important;
+}
+
+.flag.large {
+  height: 28px;
+  width: 38px;
+  background-size: 36px 26px;
+  border: 1px solid #afafaf;
+}
+.flag-optimized.large {
+  height: 28px;
+  width: 38px;
+  background-size: 36px 30px;
+  border: 1px solid #afafaf;
+}
+
+
+
+
+.bd {  background: url(assets/fonts/flags/bd.png) no-repeat;}
+.us {  background: url(assets/fonts/flags/us.png) no-repeat;}
+.fr {  background: url(assets/fonts/flags/fr.png) no-repeat;}
+.jp {  background: url(assets/fonts/flags/jp.png) no-repeat;}
+.sa {  background: url(assets/fonts/flags/sa.png) no-repeat;}
+.es {  background: url(assets/fonts/flags/es.png) no-repeat;}
+.kr {  background: url(assets/fonts/flags/kr.png) no-repeat;}
+/* end of all country flags css */
+
+.ion, .ionicons, .ion-alert:before, .ion-alert-circled:before, .ion-android-add:before, .ion-android-add-circle:before, .ion-android-alarm-clock:before, .ion-android-alert:before, .ion-android-apps:before, .ion-android-archive:before, .ion-android-arrow-back:before, .ion-android-arrow-down:before, .ion-android-arrow-dropdown:before, .ion-android-arrow-dropdown-circle:before, .ion-android-arrow-dropleft:before, .ion-android-arrow-dropleft-circle:before, .ion-android-arrow-dropright:before, .ion-android-arrow-dropright-circle:before, .ion-android-arrow-dropup:before, .ion-android-arrow-dropup-circle:before, .ion-android-arrow-forward:before, .ion-android-arrow-up:before, .ion-android-attach:before, .ion-android-bar:before, .ion-android-bicycle:before, .ion-android-boat:before, .ion-android-bookmark:before, .ion-android-bulb:before, .ion-android-bus:before, .ion-android-calendar:before, .ion-android-call:before, .ion-android-camera:before, .ion-android-cancel:before, .ion-android-car:before, .ion-android-cart:before, .ion-android-chat:before, .ion-android-checkbox:before, .ion-android-checkbox-blank:before, .ion-android-checkbox-outline:before, .ion-android-checkbox-outline-blank:before, .ion-android-checkmark-circle:before, .ion-android-clipboard:before, .ion-android-close:before, .ion-android-cloud:before, .ion-android-cloud-circle:before, .ion-android-cloud-done:before, .ion-android-cloud-outline:before, .ion-android-color-palette:before, .ion-android-compass:before, .ion-android-contact:before, .ion-android-contacts:before, .ion-android-contract:before, .ion-android-create:before, .ion-android-delete:before, .ion-android-desktop:before, .ion-android-document:before, .ion-android-done:before, .ion-android-done-all:before, .ion-android-download:before, .ion-android-drafts:before, .ion-android-exit:before, .ion-android-expand:before, .ion-android-favorite:before, .ion-android-favorite-outline:before, .ion-android-film:before, .ion-android-folder:before, .ion-android-folder-open:before, .ion-android-funnel:before, .ion-android-globe:before, .ion-android-hand:before, .ion-android-hangout:before, .ion-android-happy:before, .ion-android-home:before, .ion-android-image:before, .ion-android-laptop:before, .ion-android-list:before, .ion-android-locate:before, .ion-android-lock:before, .ion-android-mail:before, .ion-android-map:before, .ion-android-menu:before, .ion-android-microphone:before, .ion-android-microphone-off:before, .ion-android-more-horizontal:before, .ion-android-more-vertical:before, .ion-android-navigate:before, .ion-android-notifications:before, .ion-android-notifications-none:before, .ion-android-notifications-off:before, .ion-android-open:before, .ion-android-options:before, .ion-android-people:before, .ion-android-person:before, .ion-android-person-add:before, .ion-android-phone-landscape:before, .ion-android-phone-portrait:before, .ion-android-pin:before, .ion-android-plane:before, .ion-android-playstore:before, .ion-android-print:before, .ion-android-radio-button-off:before, .ion-android-radio-button-on:before, .ion-android-refresh:before, .ion-android-remove:before, .ion-android-remove-circle:before, .ion-android-restaurant:before, .ion-android-sad:before, .ion-android-search:before, .ion-android-send:before, .ion-android-settings:before, .ion-android-share:before, .ion-android-share-alt:before, .ion-android-star:before, .ion-android-star-half:before, .ion-android-star-outline:before, .ion-android-stopwatch:before, .ion-android-subway:before, .ion-android-sunny:before, .ion-android-sync:before, .ion-android-textsms:before, .ion-android-time:before, .ion-android-train:before, .ion-android-unlock:before, .ion-android-upload:before, .ion-android-volume-down:before, .ion-android-volume-mute:before, .ion-android-volume-off:before, .ion-android-volume-up:before, .ion-android-walk:before, .ion-android-warning:before, .ion-android-watch:before, .ion-android-wifi:before, .ion-aperture:before, .ion-archive:before, .ion-arrow-down-a:before, .ion-arrow-down-b:before, .ion-arrow-down-c:before, .ion-arrow-expand:before, .ion-arrow-graph-down-left:before, .ion-arrow-graph-down-right:before, .ion-arrow-graph-up-left:before, .ion-arrow-graph-up-right:before, .ion-arrow-left-a:before, .ion-arrow-left-b:before, .ion-arrow-left-c:before, .ion-arrow-move:before, .ion-arrow-resize:before, .ion-arrow-return-left:before, .ion-arrow-return-right:before, .ion-arrow-right-a:before, .ion-arrow-right-b:before, .ion-arrow-right-c:before, .ion-arrow-shrink:before, .ion-arrow-swap:before, .ion-arrow-up-a:before, .ion-arrow-up-b:before, .ion-arrow-up-c:before, .ion-asterisk:before, .ion-at:before, .ion-backspace:before, .ion-backspace-outline:before, .ion-bag:before, .ion-battery-charging:before, .ion-battery-empty:before, .ion-battery-full:before, .ion-battery-half:before, .ion-battery-low:before, .ion-beaker:before, .ion-beer:before, .ion-bluetooth:before, .ion-bonfire:before, .ion-bookmark:before, .ion-bowtie:before, .ion-briefcase:before, .ion-bug:before, .ion-calculator:before, .ion-calendar:before, .ion-camera:before, .ion-card:before, .ion-cash:before, .ion-chatbox:before, .ion-chatbox-working:before, .ion-chatboxes:before, .ion-chatbubble:before, .ion-chatbubble-working:before, .ion-chatbubbles:before, .ion-checkmark:before, .ion-checkmark-circled:before, .ion-checkmark-round:before, .ion-chevron-down:before, .ion-chevron-left:before, .ion-chevron-right:before, .ion-chevron-up:before, .ion-clipboard:before, .ion-clock:before, .ion-close:before, .ion-close-circled:before, .ion-close-round:before, .ion-closed-captioning:before, .ion-cloud:before, .ion-code:before, .ion-code-download:before, .ion-code-working:before, .ion-coffee:before, .ion-compass:before, .ion-compose:before, .ion-connection-bars:before, .ion-contrast:before, .ion-crop:before, .ion-cube:before, .ion-disc:before, .ion-document:before, .ion-document-text:before, .ion-drag:before, .ion-earth:before, .ion-easel:before, .ion-edit:before, .ion-egg:before, .ion-eject:before, .ion-email:before, .ion-email-unread:before, .ion-erlenmeyer-flask:before, .ion-erlenmeyer-flask-bubbles:before, .ion-eye:before, .ion-eye-disabled:before, .ion-female:before, .ion-filing:before, .ion-film-marker:before, .ion-fireball:before, .ion-flag:before, .ion-flame:before, .ion-flash:before, .ion-flash-off:before, .ion-folder:before, .ion-fork:before, .ion-fork-repo:before, .ion-forward:before, .ion-funnel:before, .ion-gear-a:before, .ion-gear-b:before, .ion-grid:before, .ion-hammer:before, .ion-happy:before, .ion-happy-outline:before, .ion-headphone:before, .ion-heart:before, .ion-heart-broken:before, .ion-help:before, .ion-help-buoy:before, .ion-help-circled:before, .ion-home:before, .ion-icecream:before, .ion-image:before, .ion-images:before, .ion-information:before, .ion-information-circled:before, .ion-ionic:before, .ion-ios-alarm:before, .ion-ios-alarm-outline:before, .ion-ios-albums:before, .ion-ios-albums-outline:before, .ion-ios-americanfootball:before, .ion-ios-americanfootball-outline:before, .ion-ios-analytics:before, .ion-ios-analytics-outline:before, .ion-ios-arrow-back:before, .ion-ios-arrow-down:before, .ion-ios-arrow-forward:before, .ion-ios-arrow-left:before, .ion-ios-arrow-right:before, .ion-ios-arrow-thin-down:before, .ion-ios-arrow-thin-left:before, .ion-ios-arrow-thin-right:before, .ion-ios-arrow-thin-up:before, .ion-ios-arrow-up:before, .ion-ios-at:before, .ion-ios-at-outline:before, .ion-ios-barcode:before, .ion-ios-barcode-outline:before, .ion-ios-baseball:before, .ion-ios-baseball-outline:before, .ion-ios-basketball:before, .ion-ios-basketball-outline:before, .ion-ios-bell:before, .ion-ios-bell-outline:before, .ion-ios-body:before, .ion-ios-body-outline:before, .ion-ios-bolt:before, .ion-ios-bolt-outline:before, .ion-ios-book:before, .ion-ios-book-outline:before, .ion-ios-bookmarks:before, .ion-ios-bookmarks-outline:before, .ion-ios-box:before, .ion-ios-box-outline:before, .ion-ios-briefcase:before, .ion-ios-briefcase-outline:before, .ion-ios-browsers:before, .ion-ios-browsers-outline:before, .ion-ios-calculator:before, .ion-ios-calculator-outline:before, .ion-ios-calendar:before, .ion-ios-calendar-outline:before, .ion-ios-camera:before, .ion-ios-camera-outline:before, .ion-ios-cart:before, .ion-ios-cart-outline:before, .ion-ios-chatboxes:before, .ion-ios-chatboxes-outline:before, .ion-ios-chatbubble:before, .ion-ios-chatbubble-outline:before, .ion-ios-checkmark:before, .ion-ios-checkmark-empty:before, .ion-ios-checkmark-outline:before, .ion-ios-circle-filled:before, .ion-ios-circle-outline:before, .ion-ios-clock:before, .ion-ios-clock-outline:before, .ion-ios-close:before, .ion-ios-close-empty:before, .ion-ios-close-outline:before, .ion-ios-cloud:before, .ion-ios-cloud-download:before, .ion-ios-cloud-download-outline:before, .ion-ios-cloud-outline:before, .ion-ios-cloud-upload:before, .ion-ios-cloud-upload-outline:before, .ion-ios-cloudy:before, .ion-ios-cloudy-night:before, .ion-ios-cloudy-night-outline:before, .ion-ios-cloudy-outline:before, .ion-ios-cog:before, .ion-ios-cog-outline:before, .ion-ios-color-filter:before, .ion-ios-color-filter-outline:before, .ion-ios-color-wand:before, .ion-ios-color-wand-outline:before, .ion-ios-compose:before, .ion-ios-compose-outline:before, .ion-ios-contact:before, .ion-ios-contact-outline:before, .ion-ios-copy:before, .ion-ios-copy-outline:before, .ion-ios-crop:before, .ion-ios-crop-strong:before, .ion-ios-download:before, .ion-ios-download-outline:before, .ion-ios-drag:before, .ion-ios-email:before, .ion-ios-email-outline:before, .ion-ios-eye:before, .ion-ios-eye-outline:before, .ion-ios-fastforward:before, .ion-ios-fastforward-outline:before, .ion-ios-filing:before, .ion-ios-filing-outline:before, .ion-ios-film:before, .ion-ios-film-outline:before, .ion-ios-flag:before, .ion-ios-flag-outline:before, .ion-ios-flame:before, .ion-ios-flame-outline:before, .ion-ios-flask:before, .ion-ios-flask-outline:before, .ion-ios-flower:before, .ion-ios-flower-outline:before, .ion-ios-folder:before, .ion-ios-folder-outline:before, .ion-ios-football:before, .ion-ios-football-outline:before, .ion-ios-game-controller-a:before, .ion-ios-game-controller-a-outline:before, .ion-ios-game-controller-b:before, .ion-ios-game-controller-b-outline:before, .ion-ios-gear:before, .ion-ios-gear-outline:before, .ion-ios-glasses:before, .ion-ios-glasses-outline:before, .ion-ios-grid-view:before, .ion-ios-grid-view-outline:before, .ion-ios-heart:before, .ion-ios-heart-outline:before, .ion-ios-help:before, .ion-ios-help-empty:before, .ion-ios-help-outline:before, .ion-ios-home:before, .ion-ios-home-outline:before, .ion-ios-infinite:before, .ion-ios-infinite-outline:before, .ion-ios-information:before, .ion-ios-information-empty:before, .ion-ios-information-outline:before, .ion-ios-ionic-outline:before, .ion-ios-keypad:before, .ion-ios-keypad-outline:before, .ion-ios-lightbulb:before, .ion-ios-lightbulb-outline:before, .ion-ios-list:before, .ion-ios-list-outline:before, .ion-ios-location:before, .ion-ios-location-outline:before, .ion-ios-locked:before, .ion-ios-locked-outline:before, .ion-ios-loop:before, .ion-ios-loop-strong:before, .ion-ios-medical:before, .ion-ios-medical-outline:before, .ion-ios-medkit:before, .ion-ios-medkit-outline:before, .ion-ios-mic:before, .ion-ios-mic-off:before, .ion-ios-mic-outline:before, .ion-ios-minus:before, .ion-ios-minus-empty:before, .ion-ios-minus-outline:before, .ion-ios-monitor:before, .ion-ios-monitor-outline:before, .ion-ios-moon:before, .ion-ios-moon-outline:before, .ion-ios-more:before, .ion-ios-more-outline:before, .ion-ios-musical-note:before, .ion-ios-musical-notes:before, .ion-ios-navigate:before, .ion-ios-navigate-outline:before, .ion-ios-nutrition:before, .ion-ios-nutrition-outline:before, .ion-ios-paper:before, .ion-ios-paper-outline:before, .ion-ios-paperplane:before, .ion-ios-paperplane-outline:before, .ion-ios-partlysunny:before, .ion-ios-partlysunny-outline:before, .ion-ios-pause:before, .ion-ios-pause-outline:before, .ion-ios-paw:before, .ion-ios-paw-outline:before, .ion-ios-people:before, .ion-ios-people-outline:before, .ion-ios-person:before, .ion-ios-person-outline:before, .ion-ios-personadd:before, .ion-ios-personadd-outline:before, .ion-ios-photos:before, .ion-ios-photos-outline:before, .ion-ios-pie:before, .ion-ios-pie-outline:before, .ion-ios-pint:before, .ion-ios-pint-outline:before, .ion-ios-play:before, .ion-ios-play-outline:before, .ion-ios-plus:before, .ion-ios-plus-empty:before, .ion-ios-plus-outline:before, .ion-ios-pricetag:before, .ion-ios-pricetag-outline:before, .ion-ios-pricetags:before, .ion-ios-pricetags-outline:before, .ion-ios-printer:before, .ion-ios-printer-outline:before, .ion-ios-pulse:before, .ion-ios-pulse-strong:before, .ion-ios-rainy:before, .ion-ios-rainy-outline:before, .ion-ios-recording:before, .ion-ios-recording-outline:before, .ion-ios-redo:before, .ion-ios-redo-outline:before, .ion-ios-refresh:before, .ion-ios-refresh-empty:before, .ion-ios-refresh-outline:before, .ion-ios-reload:before, .ion-ios-reverse-camera:before, .ion-ios-reverse-camera-outline:before, .ion-ios-rewind:before, .ion-ios-rewind-outline:before, .ion-ios-rose:before, .ion-ios-rose-outline:before, .ion-ios-search:before, .ion-ios-search-strong:before, .ion-ios-settings:before, .ion-ios-settings-strong:before, .ion-ios-shuffle:before, .ion-ios-shuffle-strong:before, .ion-ios-skipbackward:before, .ion-ios-skipbackward-outline:before, .ion-ios-skipforward:before, .ion-ios-skipforward-outline:before, .ion-ios-snowy:before, .ion-ios-speedometer:before, .ion-ios-speedometer-outline:before, .ion-ios-star:before, .ion-ios-star-half:before, .ion-ios-star-outline:before, .ion-ios-stopwatch:before, .ion-ios-stopwatch-outline:before, .ion-ios-sunny:before, .ion-ios-sunny-outline:before, .ion-ios-telephone:before, .ion-ios-telephone-outline:before, .ion-ios-tennisball:before, .ion-ios-tennisball-outline:before, .ion-ios-thunderstorm:before, .ion-ios-thunderstorm-outline:before, .ion-ios-time:before, .ion-ios-time-outline:before, .ion-ios-timer:before, .ion-ios-timer-outline:before, .ion-ios-toggle:before, .ion-ios-toggle-outline:before, .ion-ios-trash:before, .ion-ios-trash-outline:before, .ion-ios-undo:before, .ion-ios-undo-outline:before, .ion-ios-unlocked:before, .ion-ios-unlocked-outline:before, .ion-ios-upload:before, .ion-ios-upload-outline:before, .ion-ios-videocam:before, .ion-ios-videocam-outline:before, .ion-ios-volume-high:before, .ion-ios-volume-low:before, .ion-ios-wineglass:before, .ion-ios-wineglass-outline:before, .ion-ios-world:before, .ion-ios-world-outline:before, .ion-ipad:before, .ion-iphone:before, .ion-ipod:before, .ion-jet:before, .ion-key:before, .ion-knife:before, .ion-laptop:before, .ion-leaf:before, .ion-levels:before, .ion-lightbulb:before, .ion-link:before, .ion-load-a:before, .ion-load-b:before, .ion-load-c:before, .ion-load-d:before, .ion-location:before, .ion-lock-combination:before, .ion-locked:before, .ion-log-in:before, .ion-log-out:before, .ion-loop:before, .ion-magnet:before, .ion-male:before, .ion-man:before, .ion-map:before, .ion-medkit:before, .ion-merge:before, .ion-mic-a:before, .ion-mic-b:before, .ion-mic-c:before, .ion-minus:before, .ion-minus-circled:before, .ion-minus-round:before, .ion-model-s:before, .ion-monitor:before, .ion-more:before, .ion-mouse:before, .ion-music-note:before, .ion-navicon:before, .ion-navicon-round:before, .ion-navigate:before, .ion-network:before, .ion-no-smoking:before, .ion-nuclear:before, .ion-outlet:before, .ion-paintbrush:before, .ion-paintbucket:before, .ion-paper-airplane:before, .ion-paperclip:before, .ion-pause:before, .ion-person:before, .ion-person-add:before, .ion-person-stalker:before, .ion-pie-graph:before, .ion-pin:before, .ion-pinpoint:before, .ion-pizza:before, .ion-plane:before, .ion-planet:before, .ion-play:before, .ion-playstation:before, .ion-plus:before, .ion-plus-circled:before, .ion-plus-round:before, .ion-podium:before, .ion-pound:before, .ion-power:before, .ion-pricetag:before, .ion-pricetags:before, .ion-printer:before, .ion-pull-request:before, .ion-qr-scanner:before, .ion-quote:before, .ion-radio-waves:before, .ion-record:before, .ion-refresh:before, .ion-reply:before, .ion-reply-all:before, .ion-ribbon-a:before, .ion-ribbon-b:before, .ion-sad:before, .ion-sad-outline:before, .ion-scissors:before, .ion-search:before, .ion-settings:before, .ion-share:before, .ion-shuffle:before, .ion-skip-backward:before, .ion-skip-forward:before, .ion-social-android:before, .ion-social-android-outline:before, .ion-social-angular:before, .ion-social-angular-outline:before, .ion-social-apple:before, .ion-social-apple-outline:before, .ion-social-bitcoin:before, .ion-social-bitcoin-outline:before, .ion-social-buffer:before, .ion-social-buffer-outline:before, .ion-social-chrome:before, .ion-social-chrome-outline:before, .ion-social-codepen:before, .ion-social-codepen-outline:before, .ion-social-css3:before, .ion-social-css3-outline:before, .ion-social-designernews:before, .ion-social-designernews-outline:before, .ion-social-dribbble:before, .ion-social-dribbble-outline:before, .ion-social-dropbox:before, .ion-social-dropbox-outline:before, .ion-social-euro:before, .ion-social-euro-outline:before, .ion-social-facebook:before, .ion-social-facebook-outline:before, .ion-social-foursquare:before, .ion-social-foursquare-outline:before, .ion-social-freebsd-devil:before, .ion-social-github:before, .ion-social-github-outline:before, .ion-social-google:before, .ion-social-google-outline:before, .ion-social-googleplus:before, .ion-social-googleplus-outline:before, .ion-social-hackernews:before, .ion-social-hackernews-outline:before, .ion-social-html5:before, .ion-social-html5-outline:before, .ion-social-instagram:before, .ion-social-instagram-outline:before, .ion-social-javascript:before, .ion-social-javascript-outline:before, .ion-social-linkedin:before, .ion-social-linkedin-outline:before, .ion-social-markdown:before, .ion-social-nodejs:before, .ion-social-octocat:before, .ion-social-pinterest:before, .ion-social-pinterest-outline:before, .ion-social-python:before, .ion-social-reddit:before, .ion-social-reddit-outline:before, .ion-social-rss:before, .ion-social-rss-outline:before, .ion-social-sass:before, .ion-social-skype:before, .ion-social-skype-outline:before, .ion-social-snapchat:before, .ion-social-snapchat-outline:before, .ion-social-tumblr:before, .ion-social-tumblr-outline:before, .ion-social-tux:before, .ion-social-twitch:before, .ion-social-twitch-outline:before, .ion-social-twitter:before, .ion-social-twitter-outline:before, .ion-social-usd:before, .ion-social-usd-outline:before, .ion-social-vimeo:before, .ion-social-vimeo-outline:before, .ion-social-whatsapp:before, .ion-social-whatsapp-outline:before, .ion-social-windows:before, .ion-social-windows-outline:before, .ion-social-wordpress:before, .ion-social-wordpress-outline:before, .ion-social-yahoo:before, .ion-social-yahoo-outline:before, .ion-social-yen:before, .ion-social-yen-outline:before, .ion-social-youtube:before, .ion-social-youtube-outline:before, .ion-soup-can:before, .ion-soup-can-outline:before, .ion-speakerphone:before, .ion-speedometer:before, .ion-spoon:before, .ion-star:before, .ion-stats-bars:before, .ion-steam:before, .ion-stop:before, .ion-thermometer:before, .ion-thumbsdown:before, .ion-thumbsup:before, .ion-toggle:before, .ion-toggle-filled:before, .ion-transgender:before, .ion-trash-a:before, .ion-trash-b:before, .ion-trophy:before, .ion-tshirt:before, .ion-tshirt-outline:before, .ion-umbrella:before, .ion-university:before, .ion-unlocked:before, .ion-upload:before, .ion-usb:before, .ion-videocamera:before, .ion-volume-high:before, .ion-volume-low:before, .ion-volume-medium:before, .ion-volume-mute:before, .ion-wand:before, .ion-waterdrop:before, .ion-wifi:before, .ion-wineglass:before, .ion-woman:before, .ion-wrench:before, .ion-xbox:before {
+    display: inline-block;
+    font-family: "Ionicons";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
